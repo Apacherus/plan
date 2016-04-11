@@ -21,14 +21,12 @@ gulp.task("build:css", () => {
             cascade: false
         }))
         .pipe(csscomb())
-        .pipe(gulp.dest(paths.scss.dest))
-        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(paths.scss.dest));
 });
 
 gulp.task("build:html", () => {
     return gulp.src(paths.html.src)
-        .pipe(gulp.dest(paths.html.dest))
-        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(paths.html.dest));
 });
 
 gulp.task("build:img", () => {

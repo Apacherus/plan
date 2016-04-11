@@ -1,0 +1,54 @@
+html, body, #root_Wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma;
+  font-size: 12px;
+}
+
+.panelsWrapper {
+  display: flex;
+
+  .panelTools {
+    width: 200px;
+    height: 100%;
+    border: 1px solid rgba(249, 213, 145, 0.53);
+
+    .Button_ToolItem {
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      background-color: rgba(203, 116, 0, 0.3);
+      cursor: pointer;
+    }
+  }
+
+  .panelLayers {
+    width: 200px;
+
+    .panelLayers_LayerItem {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      border-radius: 4px;
+      background-color: rgba(69, 167, 181, 0.33);
+      margin: 2px 0;
+
+      &.LayerItem_Selected {
+        background-color: rgba(69, 167, 181, 0.83);
+      }
+    }
+  }
+}
+
+.stage, #mainStage {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(249, 213, 145, 0.53);
+}
